@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.les.salaomaia.controladores.LoginController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="356.0" minWidth="10.0" prefWidth="77.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="523.0" minWidth="10.0" prefWidth="523.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="172.0" minHeight="10.0" prefHeight="148.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="145.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="106.0" minHeight="10.0" prefHeight="106.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="579.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <image>
+            <Image url="@../imagens/logoMaia.png" />
+         </image>
+      </ImageView>
+      <Label text="Email:" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets right="15.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="Senha:" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets right="15.0" />
+         </GridPane.margin>
+      </Label>
+      <TextField fx:id="txtEmail" prefHeight="26.0" prefWidth="523.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets right="15.0" />
+         </GridPane.margin>
+      </TextField>
+      <ButtonBar maxHeight="-Infinity" prefHeight="42.0" prefWidth="513.0" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.valignment="TOP">
+        <buttons>
+            <Label fx:id="lblEsqueciSenha" onMouseClicked="#enviarSenha" prefHeight="16.0" prefWidth="232.0" styleClass="label-especial" text="Esqueci minha senha" textFill="BLUE" />
+          <Button fx:id="btnEntrar" mnemonicParsing="false" onAction="#entrarAplicacao" text="Entrar" />
+            <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#cancelarEntrada" text="Cancelar" />
+        </buttons>
+         <GridPane.margin>
+            <Insets right="15.0" top="15.0" />
+         </GridPane.margin>
+      </ButtonBar>
+      <PasswordField fx:id="txtSenha" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets right="15.0" />
+         </GridPane.margin>
+      </PasswordField>
+   </children>
+</GridPane>

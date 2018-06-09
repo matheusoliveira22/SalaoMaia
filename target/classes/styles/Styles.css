@@ -1,0 +1,25 @@
+
+.button {
+   -fx-font: 12pt Arial;
+   -fx-background-radius: 0;
+}
+
+.label {
+   -fx-font: 12pt Arial;
+}
+
+.label-especial {
+   -fx-font: 10pt Arial;
+   -fx-underline: true;
+   -fx-text-fill: blue;
+   -fx-cursor: hand;
+}
+
+.text-field {
+   -fx-font: 12pt Arial;
+   -fx-background-radius: 0;
+}
+
+.radio-button {
+   -fx-font: 12pt Arial; 
+}
